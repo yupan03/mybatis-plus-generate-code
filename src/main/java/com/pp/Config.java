@@ -1,21 +1,24 @@
 package com.pp;
 
 public class Config {
-    // Êı¾İ¿âÅäÖÃ start
-    private String url;
+    // æ•°æ®åº“é…ç½®start
+    public static String url = "jdbc:mysql://47.93.219.196:3306/project?characterEncoding=utf8&useSSL=false&serverTimezone=UTC&rewriteBatchedStatements=true";
 
-    private String dataBase;
+    public static String username = "server";
 
-    private String username;
+    public static String password = "server";
+    // æ•°æ®åº“end
 
-    private String password;
-    // Êı¾İ¿âÅäÖÃ end
+    public static boolean fileOverride = false;
 
-    // ÏîÄ¿Â·¾¶
-    private String projectPath;
-    // ¸¸°üÃû
-    private String packageName;
-    
-    // xmlÎÄ¼şÂ·¾¶
-    private String xmlPath;
+    // é¡¹ç›®è·¯å¾„
+    public static String projectPath = "C:\\Users\\73599\\Documents\\workspace\\mybatis-plus-generate-code";
+    // çˆ¶åŒ…å
+    public static String packageName = "com.pp";
+    // xmlè·¯å¾„
+    public static String xmlPath = "/src/main/resources/mapping";
+    // è¦ç”Ÿäº§çš„è¡¨
+    public static String[] includeTables = { "users" };
+    // ä¸éœ€è¦ç”Ÿæˆçš„è¡¨
+    public static String[] excludeTables = {};
 }
